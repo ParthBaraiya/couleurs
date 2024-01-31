@@ -52,8 +52,6 @@ final _router = GoRouter(
     GoRoute(
       path: '/:color',
       pageBuilder: (_, state) {
-        debugPrint(state.fullPath);
-        debugPrint(state.uri.toString());
         final color = state.pathParameters['color'] ?? '0000FF';
 
         return NoTransitionPage(
@@ -65,7 +63,6 @@ final _router = GoRouter(
     )
   ],
   redirect: (_, state) {
-    debugPrint(state.fullPath);
     if (state.pathParameters['color'] != null &&
         colorFromHex(state.pathParameters['color']!) == null) {
       return '/';
