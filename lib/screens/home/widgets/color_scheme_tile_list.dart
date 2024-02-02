@@ -182,7 +182,6 @@ class ColorSchemeListTile extends StatelessWidget {
 
     return ConstrainedBox(
       constraints: const BoxConstraints(
-        minWidth: 300,
         maxWidth: 400,
       ),
       child: Padding(
