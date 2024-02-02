@@ -214,7 +214,8 @@ class ColorSchemeListTile extends StatelessWidget {
               },
               child: MouseRegion(
                 cursor: SystemMouseCursors.click,
-                child: DecoratedBox(
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 300),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
                     color: color,

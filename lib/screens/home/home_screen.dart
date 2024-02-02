@@ -46,8 +46,9 @@ class HomeScreen extends StatelessWidget {
               headerSliverBuilder: (_, __) {
                 return [
                   SliverPadding(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 50,
+                    padding: const EdgeInsets.only(
+                      top: 50,
+                      bottom: 30,
                     ),
                     sliver: SliverToBoxAdapter(
                       child: selector,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
+import 'package:material_scheme_generator/main.dart';
 
 class ColorSelectionWidget extends StatefulWidget {
   const ColorSelectionWidget({
@@ -43,7 +44,10 @@ class _ColorSelectionWidgetState extends State<ColorSelectionWidget> {
             child: MouseRegion(
               onEnter: (_) => _updateHover(true),
               onExit: (_) => _updateHover(false),
-              child: Container(
+              child: AnimatedContainer(
+                duration: const Duration(
+                  milliseconds: 300,
+                ),
                 decoration: BoxDecoration(
                   color: widget.selectedColor,
                   borderRadius: BorderRadius.circular(20),
@@ -90,6 +94,24 @@ class _ColorSelectionWidgetState extends State<ColorSelectionWidget> {
             ),
             style: Theme.of(context).textTheme.headlineSmall,
           ),
+          const SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text('Light'),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                ),
+                child: Switch.adaptive(
+                  value: Theme.of(context).brightness == Brightness.dark,
+                  onChanged: (value) => SchemeGeneratorApp.themeMode.value =
+                      value ? ThemeMode.dark : ThemeMode.light,
+                ),
+              ),
+              const Text('Dark'),
+            ],
+          )
         ],
       ),
     );
