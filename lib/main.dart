@@ -1,8 +1,8 @@
+import 'package:couleurs/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
-import 'package:couleurs/screens/home/home_screen.dart';
 
 void main() {
   usePathUrlStrategy();
@@ -21,6 +21,7 @@ class SchemeGeneratorApp extends StatelessWidget {
       builder: (_, mode, __) {
         return MaterialApp.router(
           title: 'Flutter Demo',
+          debugShowCheckedModeBanner: false,
           theme: ThemeData.light().copyWith(
             scaffoldBackgroundColor: const Color(0xFFF4F4F4),
             shadowColor: Colors.black.withOpacity(0.1),
