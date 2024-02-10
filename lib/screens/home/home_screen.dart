@@ -1,10 +1,10 @@
 import 'dart:math' as math;
 
+import 'package:couleurs/screens/home/widgets/color_scheme_tile_list.dart';
+import 'package:couleurs/screens/home/widgets/color_selection_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:go_router/go_router.dart';
-import 'package:material_scheme_generator/screens/home/widgets/color_scheme_tile_list.dart';
-import 'package:material_scheme_generator/screens/home/widgets/color_selection_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({

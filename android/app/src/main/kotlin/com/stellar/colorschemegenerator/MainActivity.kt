@@ -1,4 +1,4 @@
-package com.colorschemegenerator.stellar.material_scheme_generator
+package com.stellar.colorschemegenerator
 
 import io.flutter.embedding.android.FlutterActivity
 

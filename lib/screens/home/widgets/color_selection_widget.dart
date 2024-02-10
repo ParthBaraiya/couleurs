@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
-import 'package:material_scheme_generator/main.dart';
+import 'package:couleurs/main.dart';
 
 class ColorSelectionWidget extends StatefulWidget {
   const ColorSelectionWidget({

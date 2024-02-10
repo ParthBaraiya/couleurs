@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
-import 'package:material_scheme_generator/screens/home/home_screen.dart';
+import 'package:couleurs/screens/home/home_screen.dart';
 
 void main() {
   usePathUrlStrategy();

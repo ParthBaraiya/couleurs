@@ -1,4 +1,4 @@
-name: material_scheme_generator
+name: couleurs
 description: "A flutter app to generate color scheme for material app."
 publish_to: 'none'
 
@@ -13,7 +13,7 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
   flutter_colorpicker: ^1.0.3
-  go_router: ^13.1.0
+  go_router: ^13.2.0
 
 dev_dependencies:
   flutter_test:
