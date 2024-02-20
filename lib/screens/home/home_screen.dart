@@ -5,6 +5,7 @@ import 'package:couleurs/screens/home/widgets/color_selection_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({
@@ -51,7 +52,34 @@ class HomeScreen extends StatelessWidget {
                       bottom: 30,
                     ),
                     sliver: SliverToBoxAdapter(
-                      child: selector,
+                      child: Column(
+                        children: [
+                           Align(
+                            alignment: Alignment.centerRight,
+                            child: InkWell(
+                              onTap: () async {
+                                final uri = Uri.parse(
+                                    'https://parthbaraiya.github.io/privacy_policies/couleurs/privacy_policy.html');
+
+                                if(await canLaunchUrl(uri)) {
+                                  launchUrl(uri);
+                                }
+                              },
+                              child: Padding(
+                                padding: EdgeInsets.only(
+                                  left: 20,
+                                  right: 20,
+                                  bottom: 20,
+                                ),
+                                child: Icon(
+                                  Icons.privacy_tip_outlined,
+                                ),
+                              ),
+                            ),
+                          ),
+                          selector,
+                        ],
+                      ),
                     ),
                   ),
                 ];

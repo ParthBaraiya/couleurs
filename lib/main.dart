@@ -162,7 +162,7 @@ final _router = GoRouter(
           ),
         );
       },
-    )
+    ),
   ],
   redirect: (_, state) {
     if (state.pathParameters['color'] != null &&
