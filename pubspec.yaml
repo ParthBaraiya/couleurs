@@ -2,7 +2,7 @@ name: couleurs
 description: "A flutter app to generate color scheme for material app."
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: '>=3.2.6 <4.0.0'
