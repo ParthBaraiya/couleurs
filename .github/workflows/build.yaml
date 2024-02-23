@@ -27,7 +27,7 @@ jobs:
         run: flutter analyze
 
       - name: Build Artifact
-        run: flutter build web --base-href "/material_scheme_generator/"
+        run: flutter build web --base-href "/couleurs/"
 
       - name: Copy index.html to 404.html
         run: cp build/web/index.html build/web/404.html
