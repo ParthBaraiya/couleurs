@@ -54,18 +54,18 @@ class HomeScreen extends StatelessWidget {
                     sliver: SliverToBoxAdapter(
                       child: Column(
                         children: [
-                           Align(
+                          Align(
                             alignment: Alignment.centerRight,
                             child: InkWell(
                               onTap: () async {
                                 final uri = Uri.parse(
                                     'https://parthbaraiya.github.io/privacy_policies/couleurs/privacy_policy.html');
 
-                                if(await canLaunchUrl(uri)) {
+                                if (await canLaunchUrl(uri)) {
                                   launchUrl(uri);
                                 }
                               },
-                              child: Padding(
+                              child: const Padding(
                                 padding: EdgeInsets.only(
                                   left: 20,
                                   right: 20,
