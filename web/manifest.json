@@ -1,6 +1,6 @@
 {
-    "name": "material_scheme_generator",
-    "short_name": "material_scheme_generator",
+    "name": "couleurs",
+    "short_name": "couleurs",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
