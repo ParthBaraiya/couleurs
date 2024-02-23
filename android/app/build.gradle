@@ -58,5 +58,3 @@ flutter {
     source '../..'
     target 'lib/main.dart'
 }
-
-dependencies {}
